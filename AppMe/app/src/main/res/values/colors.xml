@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#37474F</color> <!-- [ BLUE GRAY - 800 ] -->
+    <color name="colorPrimary">#455A64</color> <!-- [ BLUE GRAY - 700 ] -->
+    <color name="colorPrimaryLight">#CFD8DC</color> <!-- [ BLUE GRAY - 100 ] -->
+    <color name="colorAccent">#263238</color> <!-- [ BLUE GRAY - 900 ] -->
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorSecondary">#B2B2B2</color>
+
+    <color name="text">#FFFFFF</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#1E1E1E</color>
+    
+    <color name="semi_transparent_black">#90000000</color>
+    <color name="title_navigation_view">#FF5722</color>
+    <color name="item_list_folder_title">#FF5722</color>
+    <color name="item_list_folder_subtitle">#FF5722</color>
+    <color name="selected_color_tint">#FF5722</color>
+    <color name="folder_gray">#aaa</color>
+    <color name="tab_strip">#B42929</color>
+    <color name="tracker">#FFFF8017</color> <!-- dark orange -->
+    
+    <color name="apps_list_system_memory">#ff384248</color>
+    <color name="apps_list_cache_memory">#ff009587</color>
+    <color name="apps_list_free_memory">#ffced7db</color>
+
+    <color name="apps_background">#FFFF8017</color>
+    <color name="apps_list_background">#212121</color>
+    <color name="apps_list_background_primary">#212121</color>
+    <color name="apps_list_background_secondary">#B2B2B2</color>
+    
+    <color name="apps_textColorPrimary">#212121</color>
+    <color name="apps_textColorSecondary">#B2B2B2</color>
+    <color name="apps_red">#B3FF0000</color>
+    <color name="apps_running">#EA80FC</color>
+    <color name="apps_stopped">#fceed1</color>
+    <color name="apps_orange">#e05915</color>
+    <color name="apps_highlight">#fceed1</color>
+    <color name="apps_debug_kit_primary">#8FB5C3</color>
+    <color name="apps_debug_kit_background">#022735</color>
+    <color name="apps_debug_kit_background_black">#000000</color>
+    <color name="apps_debug_kit_primary_light">#ffffff</color>
+    
+    <!-- General -->
+    <color name="about_item_icon_color">#313131</color>
+    <color name="about_background_color">#FFFFFF</color>
+    <color name="about_separator_color">#e1e1e1</color>
+
+    <!-- Social -->
+    <color name="about_facebook_color">#3b5998</color>
+    <color name="about_twitter_color">#55acee</color>
+    <color name="about_instagram_color">#3f729b</color>
+    <color name="about_play_store_color">#689F38</color>
+    <color name="about_youtube_color">#cd201f</color>
+    <color name="about_github_color">#333333</color>
+
+    <!-- Text -->
+    <color name="about_description_text_color">#595959</color>
+    <color name="about_item_text_color">#7c7c7c</color>
+    <color name="about_text_color">#595959</color>
+    
+    <color name="dotted_line">#8a000000</color>
+    
+  
+    <color name="colorControlNormal">@color/textColorSecondary</color>
+    <color name="colorControlActivated">@color/colorAccent</color>
+    <color name="colorControlHighlight">@color/divider</color>
+
+    <!--
+    <color name="colorButtonNormal">#19C1B2</color>
+    <color name="colorSwitchThumbNormal">#19C1B2</color>
+    <color name="navigationBarColor">@color/colorPrimaryDark</color>
+    -->
+
+    <color name="card_pressed">#19000000</color>
+    <color name="card_normal">#e6ffffff</color>
+    <item name="title_bg" type="color" >#FF2c5aa9</item>
+    <color name="background_tab_pressed">#ffffff</color>
+    
+    <color name="windowBackground">#212121</color>
+    <color name="lightBackground">#E0E0E0</color>
+    <color name="darkBackground">#424242</color>
+    <color name="drawerBackground">#FFfafafa</color>
+    <color name="rowBackground">#34474F</color>
+    
+    <!-- VIDEO EDITOR -->
+    <color name="background_video_color">#2f3031</color>
+    <color name="background_progress_color">#6C6D6D</color>
+    <color name="progress_color">@color/colorPrimary</color>
+    <color name="line_color">#FF15FF00</color>
+    <color name="shadow_color">#FF000000</color>
+    <color name="line_button">#565758</color>
+    <color name="black_translucent">#50000000</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white_translucent">#AAFFFFFF</color>
+    <color name="black_translucent">#B0000000</color>
+
+    <color name="highlight_green">#ff2ff5c3</color>
+    <color name="highlight_green_dark">#ff04c793</color>
+    <color name="highlight_green_dark_dark">#ff00b884</color>
+    <color name="highlight_green_light">#ff42ffd0</color>
+    <color name="highlighted_text_material_dark">#6680cbc4</color>
+    <color name="highlighted_text_material_light">#66009688</color>
+    <color name="home_gradient_center_color">#ff152026</color>
+    <color name="home_gradient_end_color">#ff152026</color>
+    <color name="home_gradient_start_color">#ff354952</color>
+    <color name="home_title_color">#ffffffff</color>
+    <color name="border">@color/white_translucent</color>
+    <color name="guideline">@color/white_translucent</color>
+    <color name="corner">@android:color/white</color>
+    <color name="surrounding_area">@color/black_translucent</color>
+    <color name="lighter_gray">#eeeeee</color>
+    <color name="txt_color">#3b3b3b</color>
+     
+    <color name="debug_kit_primary">#8FB5C3</color>
+    <color name="debug_kit_background">#022735</color>
+    <color name="debug_kit_background_black">#000</color>
+
+
+    <color name="debug_kit_primary_light">#fff</color>
+    <color name="debug_kit_background_light">#8FB5C3</color>
+    <color name="debug_kit_background_black_light">#000</color>
+ 
+</resources>
