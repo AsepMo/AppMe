@@ -1,0 +1,113 @@
+package com.github.template.engine.widget;
+
+import android.annotation.TargetApi;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.Color;
+import android.util.AttributeSet;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.Gravity;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.Toast;
+
+import java.util.Calendar;
+
+import com.github.template.R;
+import com.github.template.application.MonitorActivity;
+import com.github.template.engine.view.Element;
+import com.github.template.engine.view.MenuMonitor;
+
+public class MonitorLayout extends RelativeLayout {
+
+    public static String TAG = MonitorLayout.class.getSimpleName();
+    
+    private Activity mActivity;
+    private Context mContext;
+    private LayoutInflater mInflater;
+    private View mFrameLayout;
+    private MenuMonitor mMenuMonitor;
+    
+    public MonitorLayout(Context context) {
+        super(context);
+        init(context, null);
+    }
+
+    public MonitorLayout(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        init(context, attrs);
+    }
+
+    public MonitorLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init(context, attrs);
+    }
+
+
+    private void init(Context context, AttributeSet attrs) {
+        setBackgroundColor(R.color.windowBackground);
+        
+        mContext = context;
+        mActivity = (Activity)context;
+    }
+
+    // View events
+
+    @Override
+    protected void onFinishInflate() {
+        super.onFinishInflate();
+
+        setKeepScreenOn(true);
+
+        // Instantiate and add TextureView for rendering
+        mInflater = LayoutInflater.from(getContext());
+        mFrameLayout = mInflater.inflate(R.layout.layout_monitor, this, false);
+        addView(mFrameLayout); 
+        
+        //mStorageMonitor = (StorageMonitor)mFrameLayout.findViewById(R.id.storage_monitor);
+        mMenuMonitor = (MenuMonitor)mFrameLayout.findViewById(R.id.menu_monitor);
+        Element adsElement = new Element();
+        adsElement.setTitle("Monitoring Your Phone And Apps");
+
+        mMenuMonitor.isRTL(false);
+        mMenuMonitor.addItem(new Element().setTitle("Monitor :"));
+        mMenuMonitor.addActivity("Activity");
+        mMenuMonitor.addReceiver("Receiver");
+        //mMenuMonitor.addPackageReceiver("Package Receiver");
+        mMenuMonitor.addScreen("Screen");
+        mMenuMonitor.addSdcard("Sdcard");
+        mMenuMonitor.addLog("Logcat");
+        
+        mMenuMonitor.addItem(adsElement);
+        mMenuMonitor.addItem(getCopyRightsElement());
+    }
+    
+    public Element getCopyRightsElement() {
+        Element copyRightsElement = new Element();
+        final String copyrights = String.format(mContext.getString(R.string.copy_right), Calendar.getInstance().get(Calendar.YEAR));
+        copyRightsElement.setTitle(copyrights);
+        copyRightsElement.setIconDrawable(R.drawable.about_icon_copy_right);
+        copyRightsElement.setIconTint(R.color.about_item_icon_color);
+        copyRightsElement.setIconNightTint(android.R.color.white);
+        copyRightsElement.setGravity(Gravity.CENTER);
+        copyRightsElement.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(mContext, copyrights, Toast.LENGTH_SHORT).show();
+                }
+            });
+        return copyRightsElement;
+    }
+    
+    public void onPause(){
+        //mStorageMonitor.onPause();
+    }
+    
+    public void onDestroy(){
+        //mStorageMonitor.onDestroy();
+    }
+}

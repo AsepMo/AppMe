@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_open"
+        android:title="@string/menu_open"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_backup"
+        android:title="@string/menu_backup"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_uninstall"
+        android:title="@string/menu_uninstall"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_share"
+        android:title="@string/menu_share"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_open_playstore"
+        android:title="@string/menu_open_playstore"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_properties"
+        android:title="@string/menu_info"
+        app:showAsAction="ifRoom"/>
+
+</menu>

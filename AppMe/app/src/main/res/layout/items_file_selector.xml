@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginBottom="12dp"
+	android:layout_marginTop="12dp"
+	android:background="#D4D4D4">
+
+	<ImageView
+		android:id="@+id/imgFileIcon"
+		android:layout_width="62dp"
+		android:layout_height="63dp"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:padding="2dp"
+		android:scaleType="fitXY"
+		android:src="@drawable/apk_v2"/>
+
+	<TextView
+		android:id="@+id/tvFileName"
+		android:layout_marginTop="12dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+		android:layout_toRightOf="@+id/imgFileIcon"
+		android:maxLines="1"
+		android:ellipsize="end"
+		android:singleLine="true"
+		android:text="File name.mp3"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textColor="#5B5B5B"/>
+
+	<TextView
+		android:id="@+id/tvFileDetails"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_below="@+id/tvFileName"
+		android:layout_toRightOf="@+id/imgFileIcon"
+		android:ellipsize="end"
+		android:maxLines="1"
+		android:text="Size: 48mb"
+		android:textColor="#000000"/>
+
+</RelativeLayout>
+

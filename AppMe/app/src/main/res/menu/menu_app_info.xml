@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item android:title="@string/app_sort"
+          android:icon="@drawable/ic_sort_descending"
+          app:showAsAction="always">
+        <menu>
+            <group
+                android:checkableBehavior="single"
+                android:menuCategory="container">
+
+                <item android:id="@+id/action_sort_domain"
+                    android:title="@string/app_system_user"/>
+
+                <item android:id="@+id/action_sort_name"
+                    android:title="@string/app_package_name"/>
+
+                <item android:id="@+id/action_sort_pkg"
+                    android:title="@string/app_package_string"/>
+
+                <item android:id="@+id/action_sort_installation"
+                    android:title="@string/app_installation"/>
+
+                <item android:id="@+id/action_sort_sharedid"
+                    android:title="@string/app_shared_user_id"/>
+
+                <item android:id="@+id/action_sort_size"
+                    android:title="@string/app_size"/>
+
+                <item android:id="@+id/action_sort_sha"
+                    android:title="@string/app_signatures"/>
+
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="@string/app_refresh"
+        android:icon="@drawable/ic_refresh"
+        android:id="@+id/action_refresh"
+        app:showAsAction="ifRoom"/>
+
+</menu>
