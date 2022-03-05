@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/root_view"
+	android:layout_gravity="center"
+	android:layout_marginTop="4dp"
+	android:layout_marginBottom="4dp"
+	android:layout_marginLeft="8dp"
+	android:layout_marginRight="8dp"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<RelativeLayout
+		android:id="@+id/loading_icon_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/windowBackground">
+
+		<ImageView
+			android:layout_margin="5dp"
+			android:id="@+id/icon_loading"
+			android:layout_width="55dp"
+			android:layout_height="55dp"
+			android:scaleType="fitXY"
+			android:src="@drawable/action_loading"/>
+
+		<TextView
+			android:id="@+id/loading_info"
+			android:layout_toRightOf="@+id/icon_loading"
+			android:layout_marginLeft="5dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Waiting for install"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="@color/textColorPrimary"
+			android:textSize="15sp"
+			android:typeface="serif"
+			android:layout_marginTop="5dp"/>
+
+		<TextView
+			android:id="@+id/current_status"
+			android:layout_toRightOf="@+id/icon_loading"
+			android:layout_below="@+id/loading_info"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="5dp"
+			android:layout_centerVertical="true"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="check index file"
+			android:textAllCaps="false"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="@android:color/black"
+			android:textSize="12sp"/>
+
+		<TextView
+			android:id="@+id/current_line"
+			android:layout_toRightOf="@+id/icon_loading"
+			android:layout_below="@id/current_status"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="5dp"
+			android:layout_centerVertical="true"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ellipsize="none"
+			android:singleLine="false"
+			android:text="Please wait..."
+			android:textAllCaps="false"
+			android:textColor="@color/md_light_green_A700"
+			android:textSize="10sp"
+			android:typeface="serif"
+			android:shadowColor="#ff000000"
+			android:shadowDx="1.0"
+			android:shadowDy="2.0"
+			android:shadowRadius="8.0"/>
+
+	</RelativeLayout>
+
+</LinearLayout>
+

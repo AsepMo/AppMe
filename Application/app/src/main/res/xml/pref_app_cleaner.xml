@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/action_app_cleaner_settings">
+
+    <PreferenceCategory android:title="@string/action_app_cleaner_preferences">
+
+        <CheckBoxPreference
+            android:key="@string/app_clean_on_startup_key"
+            android:summary="@string/app_clean_on_startup_summary"
+            android:title="@string/app_clean_on_startup" />
+
+        <CheckBoxPreference
+            android:key="@string/app_exit_after_clean_key"
+            android:summary="@string/app_exit_after_clean_summary"
+            android:title="@string/app_exit_after_clean" />
+
+        <CheckBoxPreference
+            android:key="@string/app_clean_on_system_startup_key"
+            android:summary="@string/app_clean_on_system_startup_summary"
+            android:title="@string/app_clean_on_system_startup" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/action_app_cleaner_about">
+
+        <Preference android:title="@string/app_about_cleaner">
+
+            <intent
+                android:action="com.appme.story.application.SETTINGS_ABOUT"
+                android:targetClass="com.appme.story.application.ApplicationPreferences"
+                android:targetPackage="com.appme.story" />
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

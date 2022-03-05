@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.appme.story">
+
+    <!-- akses penuh Internet. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- lihat status jaringan. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- lihat status Wi-Fi. -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!-- lokasi akurat (berbasis jaringan dan GPS) -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- perkiraan lokasi (berbasis jaringan) -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- ganti konektivitas jaringan. -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <!-- sambung dan putuskan Wi-Fi -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <!-- Bolehkan penerimaan multicast Wi-Fi -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+
+    <!-- baca data kontak. -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <!-- Baca log panggilan -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+
+    <!-- baca konten kartu SD Anda -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- Baca data log sensitif -->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <!-- READ_PHONE_NUMBERS -->
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+
+    <!-- Baca status dan ID telp. -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- Tulis log panggilan -->
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+
+    <!-- tulis data kontak -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+
+    <!-- mengubah atau menghapus konten kartu SD Anda -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- ubah pengaturan sistem global. -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <!-- langsung instal aplikasi. -->
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+
+    <!-- REQUEST_INSTALL_PACKAGES -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+    <!-- Update statistik pemakaian komponen. -->
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+
+    <!-- ukur kapasitas penyimpanan aplikasi. -->
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+
+    <!-- hapus aplikasi. -->
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+
+    <!-- REQUEST_DELETE_PACKAGES -->
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+
+    <!-- mengirimkan siaran tanpa paket -->
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REMOVED"/>
+
+    <!-- Akhiri proses latar belakang -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+
+    <!-- paksa telepon boot ulang. -->
+    <uses-permission android:name="android.permission.REBOOT"/>
+
+    <!-- dijalankan saat dimulai -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <!-- Ambil gambar dan video -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!-- Rekam audio -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <!-- hapus Kartu SD -->
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"/>
+
+    <!-- akses sistem file Kartu SD -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <!-- tutup aplikasi lain -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <!-- Buat pintasan -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+
+    <!-- Hapus pintasan -->
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+
+    <!-- hapus semua data memori aplikasi. -->
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true"/>
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false"/>
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+
+    <uses-feature android:name="android.hardware.wifi"/>
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        android:resizeableActivity="false">
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Splash">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".application.ApplicationStarter"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Application"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+            android:hardwareAccelerated="true">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".application.ApplicationInstaller"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Application"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+            android:hardwareAccelerated="true">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".application.ApplicationActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Splash">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".application.ApplicationInfoActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Application"
+            android:parentActivityName=".application.ApplicationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".application.ApplicationActivity"/>
+
+        </activity>
+
+        <activity
+            android:name=".application.ApplicationPreferences"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Application"
+            android:parentActivityName="com.appme.story.application.ApplicationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appme.story.application.ApplicationActivity"/>
+
+        </activity>
+
+        <activity
+            android:name=".application.ApplicationCrashHandler"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".application.ApplicationMonitor"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Application"
+            android:parentActivityName="com.appme.story.application.ApplicationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appme.story.application.ApplicationActivity"/>
+
+        </activity>
+
+        <activity
+            android:name=".application.ApplicationMonitorUsage"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Application"
+            android:parentActivityName="com.appme.story.application.ApplicationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appme.story.application.ApplicationActivity"/>
+
+        </activity>
+
+        <activity
+            android:name=".application.MonitorUsagePreference"
+            android:label="@string/action_settings"
+            android:theme="@style/AppTheme.Application"
+            android:parentActivityName=".application.ApplicationMonitorUsage">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".application.ApplicationMonitorUsage"/>
+
+        </activity>
+
+        <activity
+            android:name=".application.MonitorUsageDetails"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Application"
+            android:parentActivityName=".application.ApplicationMonitorUsage">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".application.ApplicationMonitorUsage"/>
+
+        </activity>
+
+        <activity
+            android:name=".application.MonitorUsageIgnore"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Application"
+            android:parentActivityName=".application.MonitorUsagePreference">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".application.MonitorUsagePreference"/>
+
+        </activity>
+
+        <service android:name=".service.MonitorUsageService"/>
+
+        <service android:name=".service.AlarmService"/>
+
+        <receiver
+            android:name=".receiver.AlarmReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action android:name="ALARM_RECEIVER"/>
+
+            </intent-filter>
+
+        </receiver>
+
+        <service
+            android:name=".service.InstallService"
+            android:exported="false"
+            android:process=":service"/>
+
+        <service
+            android:name=".service.AppMeService"
+            android:exported="false"
+            android:process=":service"/>
+
+        <service
+            android:name=".service.AppCleanerService"
+            android:exported="false"/>
+
+        <service
+            android:name=".servive.KeepAliveService"
+            android:exported="true"
+            tools:ignore="ExportedService"/>
+
+        <receiver
+            android:name=".receiver.RemoteLogger"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <receiver
+            android:name=".receiver.OnBootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+
+            </intent-filter>
+
+        </receiver>
+
+        <receiver
+            android:name=".receiver.PackageMonitorReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <action android:name="android.intent.action.PACKAGE_CHANGED"/>
+
+                <data android:scheme="package"/>
+
+            </intent-filter>
+
+        </receiver>
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="4.0"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="8dp">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Path"
+		android:textColor="?colorAccent"
+		android:textStyle="bold"/>
+
+	<TextView
+		android:id="@+id/txt_info"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="TextView"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:text="Content"
+		android:textColor="?colorAccent"
+		android:textStyle="bold"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fillViewport="true">
+
+		<TextView
+			android:id="@+id/editor_view"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:editable="false"
+			android:gravity="top"
+			android:text="begin end for to do"/>
+
+	</ScrollView>
+
+</LinearLayout>
+

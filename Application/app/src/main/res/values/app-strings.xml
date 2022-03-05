@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- ==================================== -->
+    <!--  APPME APPLICATION  strings.         -->
+    <!-- ==================================== -->
+    <!-- String For Toolbar -->
+    <string name="app_name" translatable="false">AppMe</string>
+    <string name="app_author_asepmo">AsepMo</string>
+    <string name="app_copy_right" translatable="false">Copyrights © %1$d</string>
+    
+    <!-- String For AppMe About -->
+    <string name="app_about_cleaner">About Cache Cleaner</string>
+    <string name="app_author">Author</string>
+    <string name="app_author_name" translatable="false">AndroWeb Developers</string>
+    <string name="app_authors_url" translatable="false">https://github.com/Frozen-Developers</string>
+    <string name="app_version_number">Version number</string>
+    <string name="app_version_number_unknown">Unknown</string>
+    <string name="app_open_source_licences">Open source licences</string>
+    <string name="app_special_thanks">Special thanks</string>
+    <string name="app_graphics" translatable="false">Samuel\'s Graphics</string>
+    <string name="app_graphics_desc">Icon and Play Store banner design</string>
+    <string name="app_graphics_url" translatable="false">https://www.facebook.com/samuelsgraphics</string>
+
+    <!-- String For AppMe Activity -->
+    <string name="app_activity_starter">Starter</string>
+    <string name="app_activity_installer">Installer</string>
+    <string name="app_activity_preference">Preference</string>
+    <string name="app_activity_monitor">Monitor</string>
+    <!-- String For AppMe Activity Preview -->
+    <string name="app_activity_image_preview">Image Preview</string>
+    <string name="app_activity_audio_preview">Audio Preview</string>
+    <string name="app_activity_video_preview">Video Preview</string>
+    <string name="app_activity_youtube_preview">YouTube Preview</string>
+    <!-- String For AppMe Activity YouTube -->
+    <string name="app_player_error">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="app_player_not_valid_link">Not a valid YouTube link!</string>
+    <!-- String For AppMe Service -->
+    <string name="app_service_title">AppMe</string> 
+    <string name="app_service_is_running">Service Is Running</string>
+    <string name="app_service_is_home">Home</string>
+    <string name="app_service_is_screenshot">ScreenShot</string>
+    <string name="app_service_is_chrome">Chrome</string>
+    <!-- String For AppMe Server -->
+    <string name="app_server_start">Start Server</string>
+    <string name="app_server_stop">Stop Server</string>
+    <string name="app_server_stop_succeed">The server has stopped.</string>
+    <string name="app_server_ip_error">Check Your IP.</string>
+    <string name="app_server_open_browser">Open in browser</string>
+    
+    <!-- ==================================== -->
+    <!--  APPME FEATUR  strings.              -->
+    <!-- ==================================== -->
+    <!-- String For AppMe Info -->
+    <string name="app_info_is_loading">Loading applications</string>
+    <string name="app_is_system">System app</string>
+    <string name="app_uninstall">Uninstall</string>
+    <string name="app_view_in_settings">View in settings</string>
+    <string name="app_permissions">Uses permissions</string>
+    <string name="app_require_no_permission">No permission required</string>
+    <string name="app_activities">Activities</string>
+    <string name="app_no_activities">No activities</string>
+    <string name="app_launch">Launch</string>
+    <string name="app_unsupported">Unsupported</string>
+    <string name="app_refresh">Refresh</string>
+    <string name="app_receivers">Receivers</string>
+    <string name="app_no_receivers">No receivers</string>
+    <string name="app_providers">Providers</string>
+    <string name="app_no_providers">No providers</string>
+    <string name="app_launch_mode">Launch mode</string>
+    <string name="app_taskAffinity">Task affinity</string>
+    <string name="app_installation">Installation</string>
+    <string name="app_update">Update</string>
+    <string name="app_authority">Authority</string>
+    <string name="app_service">Services</string>
+    <string name="app_no_service">No services</string>
+    <string name="app_orientation">Orientation</string>
+    <string name="app_softInput">Soft input mode</string>
+    <string name="app_flags">Flags</string>
+    <string name="app_grant_uri_permission">Grant URI permissions</string>
+    <string name="app_path_permissions">Path permissions</string>
+    <string name="app_read">Read</string>
+    <string name="app_write">Write</string>
+    <string name="app_patterns_allowed">Patterns allowed</string>
+    <string name="app_declared_premission">Permissions</string>
+    <string name="app_shared_libs">Shared libs</string>
+    <string name="app_group">Group</string>
+    <string name="app_protection_level">Protection level</string>
+    <string name="app_uses_feature">Uses features</string>
+    <string name="app_gles_ver">Req. Gles ver.</string>
+    <string name="app_no_feature">No features</string>
+    <string name="app_shared_user_id">Shared user id</string>
+    <string name="app_signatures">Signatures</string>
+    <string name="app_no_signatures">No signatures</string>
+    <string name="app_configurations">Configurations</string>
+    <string name="app_no_configurations">No configurations</string>
+    <string name="app_input_features">Input features</string>
+    <string name="app_view_manifest">View Manifest file</string>
+    <string name="app_view_exodus">ClassyShark3xodus ?</string>
+    <string name="app_view_exodus2">ClassyShark unleashed ?</string>
+    <string name="app_manifest">Manifest</string>
+    <string name="app_is_loading">Loading &#8230;</string> <!-- &#8230; = ... -->
+    <string name="app_package_name">Name</string>
+    <string name="app_package_string">Package</string>
+    <string name="app_system_user">System/User</string>
+    <string name="app_size">Size</string>
+    <string name="app_sdk">Sdk</string>
+    <string name="app_netstats_received">Data received</string>
+    <string name="app_netstats_transmitted">Data transmitted</string>
+    <string name="app_netstats_msg">* Data transmitted since last boot</string>
+    <string name="app_size_details">Size details</string>
+    <string name="app_location_internal">Internal</string>
+    <string name="app_location_external">External</string>
+    <string name="app_code_size">Code (apk file)</string>
+    <string name="app_data_size">Data</string>
+    <string name="app_cache_size">Cache</string>
+    <string name="app_obb_size">Obb</string>
+    <string name="app_media_size">Media</string>
+    <string name="app_not_installed">Application not installed</string>
+    <string name="app_system">System</string>
+    <string name="app_system_u">System UPDATED</string>
+    <string name="app_user">User</string>
+    <string name="app_sort">Sort</string>
+    <!-- String For AppMe Manager -->
+    <string name="app_manager_header">Total App: %1$s , Total Size: %2$s</string>
+    <string name="app_manager_not_allowed">Not Allowed</string>
+   
+    <!-- String For AppMe Monitor --> 
+    <!-- String For AppMe Monitor Activity -->
+    <string name="app_monitor_detail">Details</string>
+    <string name="app_monitor_duration">Duration</string>
+    <string name="app_monitor_grant_success">Grand permission successfully</string>
+    <string name="app_monitor_hide_system_apps">Hide system Apps</string>
+    <string name="app_monitor_hide_uninstall_apps">Hide uninstalled Apps</string>
+    <string name="app_monitor_ignore">Ignore this app</string>
+    <string name="app_monitor_ignore_hint">Apps in this list will be hidden</string>
+    <string name="app_monitor_ignore_list">Ignore list</string>
+    <string name="app_monitor_ignore_success">Move to ignore list successfully</string>
+    <string name="app_monitor_more">More detail</string>
+    <string name="app_monitor_info">App info</string>
+    <string name="app_monitor_notification_title">AppTimeline running</string>
+    <string name="app_monitor_notification_message">monitoring your app usage</string>
+    <string name="app_monitor_not_support">You device not support monitoring</string>
+    <string name="app_monitor_refresh">Refresh</string>
+    <string name="app_monitor_toast_permission">Please find \"AppsTimeline\" and grant the permission</string>
+    <string name="app_monitor_times">%1$s · %2$d times</string>
+    <string name="app_monitor_times_only">times</string>
+    <string name="app_monitor_total">%1$s</string>
+    <string name="app_monitor_version">v %1$s</string>
+    <string name="app_enable_apps_monitor">Enable apps monitor</string>
+    <string name="app_enable_apps_monitoring">Apps monitoring</string>
+    <string name="app_wifi_data">WiFi:%1$s · Mobile:%2$s</string>
+    <string name="app_feedback">feedback: zhishoumowen@gmail.com</string>
+    
+    <!-- String For AppMe Cleaner -->
+    <string name="app_list_header_title">Device memory</string>
+    <string name="app_list_header_used_prefix">Used</string>
+    <string name="app_list_header_cache_prefix">Cache</string>
+    <string name="app_list_header_free_prefix">Free</string>
+    <string name="app_list_header_footer">App cache usage</string>
+    <string name="app_list_header_memory"><xliff:g id="memory">%1$s</xliff:g></string>
+    <string name="app_empty_cache">Cache is empty.</string>
+    <string name="app_no_such_application">No such application.</string>
+    <string name="app_cleaning_cache">Cleaning cache</string>
+    <string name="app_cleaning_in_progress">Cleaning in progress…</string>
+    <string name="app_cleaned">Cache cleaned</string>
+    <string name="app_toast_could_not_clean">Could not clean the cache</string>
+    <string name="app_toast_could_not_clean_reason">Could not clean the cache: %1$s</string>
+    <string name="app_clean_on_startup">Clean on app startup</string>
+    <string name="app_clean_on_startup_summary">Automatically clean cache on application startup</string>
+    <string name="app_clean_on_startup_key" translatable="false">clean_on_app_startup</string>
+    <string name="app_exit_after_clean">Exit after clean up</string>
+    <string name="app_exit_after_clean_summary">Exit after Clean button is clicked and clean up is completed</string>
+    <string name="app_exit_after_clean_key" translatable="false">exit_after_clean</string>
+    <string name="app_clean_on_system_startup">Clean on system startup</string>
+    <string name="app_clean_on_system_startup_summary">Automatically clean cache on system startup</string>
+    <string name="app_clean_on_system_startup_key" translatable="false">clean_on_device_startup</string>
+    <string name="app_sort_by_key" translatable="false">sort_by</string>
+    <string name="app_rationale_title">Insufficient permissions</string>
+    <string name="app_rationale_storage">Storage permission is needed to clean external cache.</string>
+
+    <!-- String For AppMe Client -->
+    <!-- String For AppMe Server -->
+    <!-- String For AppMe More -->
+      
+    <!-- String For PackageReceiver-->
+    <string name="app_changed_notification_title">Package change(s) are observed</string>
+    <string name="app_added_notification_text">%1$s is added</string>
+    <string name="app_removed_notification_text">%1$s is removed</string>
+    <!-- String For Check Connection -->
+    <string name="app_connecting_text">Connecting&#8230;</string>
+    <string name="app_connected_text">Connection successful</string>
+    <string name="app_connection_error_text">Connection error</string>
+    <string name="app_handler_error">Handler Error</string>
+   
+</resources>

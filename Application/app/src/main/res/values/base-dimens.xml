@@ -1,0 +1,52 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- Dimens For Toolbar -->
+    <dimen name="scroll_threshold">4dp</dimen>
+    <dimen name="first_keyline">16dp</dimen>
+    <dimen name="second_keyline">72dp</dimen>
+    <dimen name="second_keyline_default">72dp</dimen>
+    <dimen name="big_spacing">24dp</dimen>
+    <dimen name="margin_left">10dp</dimen>
+    <dimen name="margin_right">10dp</dimen>
+
+    <!-- Title -->
+    <dimen name="layout_title_heigh">45dp</dimen>
+    <dimen name="layout_title_content_heigh">30dp</dimen>
+    <dimen name="layout_title_mini_textsize">16sp</dimen>
+
+    <!-- Dimens Convert -->
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_120">120dp</dimen>
+    <dimen name="dp_150">150dp</dimen>
+
+    <!-- TextSize dimens.-->
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_20">20sp</dimen> 
+    <!-- Item -->
+    <dimen name="sticky_item_horizontalSpacing">2dp</dimen>
+    <dimen name="sticky_item_verticalSpacing">2dp</dimen>
+    <dimen name="collection_photo_toolbar_height">45dp</dimen>
+
+    <!-- Drawer dimens. -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="dialog_edittext_margin">10dp</dimen>
+    <dimen name="dialog_button_padding">10dp</dimen>
+    <dimen name="line_dimension">1dp</dimen>
+    <dimen name="item_drawer_list_padding">16dp</dimen>
+    <dimen name="item_drawer_list_height">64dp</dimen>
+    <dimen name="icon_dimension">50dp</dimen>
+    <dimen name="icon_padding">10dp</dimen>
+    <dimen name="item_file_list_height">56dp</dimen>
+    <dimen name="list_label_max_width">180dp</dimen>
+    <dimen name="header_text_margin">7dp</dimen>
+    <dimen name="minimum_padding">2dp</dimen>
+    
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ld_activityScreenTitles">
+        <item>Info</item>
+        <item>Manager</item>
+        <item>Monitor</item>
+        <item>Cleaner</item>
+        <item /> 
+        <item>Client</item>
+        <item>Server</item>
+        <item>More</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_app_info</item>
+        <item>@drawable/ic_app_manager</item>
+        <item>@drawable/ic_app_monitor</item>
+        <item>@drawable/ic_app_cleaner</item>
+        <item>0</item>
+        <item>@drawable/ic_app_client</item> 
+        <item>@drawable/ic_app_server</item> 
+        <item>@drawable/ic_app_more</item>
+    </array>
+
+    <array name="group_titles">
+        <item>@string/app_activities</item>
+        <item>@string/app_service</item>
+        <item>@string/app_receivers</item>
+        <item>@string/app_providers</item>
+        <item>@string/app_permissions</item>
+        <item>@string/app_declared_premission</item>
+        <item>@string/app_uses_feature</item>
+        <item>@string/app_configurations</item>
+        <item>@string/app_signatures</item>
+        <item>@string/app_shared_libs</item>
+    </array>
+    
+     <string-array name="sections">
+        <item>Home</item>
+        <item>SDK</item>
+        <item>Dev Guide</item>
+        <item>Reference</item>
+        <item>Resources</item>
+        <item>Videos</item>
+        <item>Blog</item>
+    </string-array>
+    <string-array name="monitor_activity_sort">
+        <item>Total</item>
+        <item>Date</item>
+        <item>Frequency</item>
+        <item>Mobile data</item>
+    </string-array>
+    <string-array name="monitor_activity_duration">
+        <item>Today</item>
+        <item>Yesterday</item>
+    </string-array>
+    <integer-array name="monitor_activity_duration_int">
+        <item>0</item>
+        <item>1</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:id="@+id/frame_splash_icon"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1.0">
+
+        <FrameLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/splash_app_icon"
+                android:layout_gravity="center"
+                android:src="@drawable/apk_v2"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/splash_bottom_bg"/>
+
+        <LinearLayout
+            android:layout_marginBottom="18dp"
+            android:layout_above="@+id/app_copy_right"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_height="150dp">
+
+            <TextView
+                android:id="@+id/app_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="AppMe"
+                android:textColor="#ffffff"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="1"
+                android:shadowDy="2"
+                android:shadowRadius="8"/>
+
+            <TextView
+                android:id="@+id/app_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Firts Time"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="1"
+                android:shadowDy="2"
+                android:shadowRadius="8"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/app_copy_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="17dp"
+            android:gravity="center_horizontal"
+            android:text="CopyRight © 2021"
+            android:textColor="#b3ffffff"
+            android:textSize="9sp"/>
+
+	</RelativeLayout>
+</LinearLayout>

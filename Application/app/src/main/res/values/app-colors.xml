@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colors For AppMe Info -->
+    <color name="app_info_background">#FFFF8017</color>
+    <color name="app_list_background_primary">#212121</color>
+    <color name="app_list_background_secondary">#B2B2B2</color>
+    <color name="app_textColorPrimary">#212121</color>
+    <color name="app_textColorSecondary">#B2B2B2</color>
+    <color name="app_selected_color_tint">#FF5722</color>
+
+    <!-- Color For AppMe Scanning -->
+    <color name="app_color_red">#B3FF0000</color>
+    <color name="app_color_running">#EA80FC</color>
+    <color name="app_color_stopped">#fceed1</color>
+    <color name="app_color_orange">#e05915</color>
+    <color name="app_color_highlight">#fceed1</color> 
+    <color name="app_color_folder">#02cb6d</color>
+    <color name="app_color_white">#FFFFFF</color>
+    <color name="app_color_bg_loading">#dc858585</color>
+    <color name="app_color_bg_success">#dc82ce32</color>
+    <color name="app_color_bg_error">#dcd84315</color>
+
+    <!-- Color For AppMe Updater -->
+    <color name="app_primary">#8FB5C3</color>
+    <color name="app_primary_light">#ffffff</color>
+    <color name="app_background">#022735</color>
+    <color name="app_background_black">#000000</color>
+    <color name="app_errorColor">#FFE53935</color>
+    <color name="app_infoColor">#FF342FA2</color>
+    <color name="app_successColor">#FF4A934A</color>
+    <color name="app_warningColor">#FFFFC107</color>
+    <color name="app_update_background">#f3f3f3</color>
+
+    <!-- Color For AppMe Cleaner -->
+    <color name="app_list_system_memory">#ff384248</color>
+    <color name="app_list_cache_memory">#ff009587</color>
+    <color name="app_list_free_memory">#ffced7db</color>
+    <color name="app_dotted_line">#8a000000</color>
+
+    <!-- Color For AppMe DebugKit -->
+    <color name="app_actionbar_background">#455A64</color>
+    <color name="app_debug_kit_primary">#8FB5C3</color>
+    <color name="app_debug_kit_background">#022735</color>
+    <color name="app_debug_kit_background_black">#000000</color>
+    <color name="app_debug_kit_primary_light">#ffffff</color>
+    
+    <!-- Color For AppMe Activity -->
+    <color name="app_monitor_activity_divider">#EEEEEE</color>
+    <color name="app_monitor_activity_gray_darken">#DDDDDD</color>
+    <color name="app_monitor_activity_short_name">#4A4A4A</color>
+</resources>

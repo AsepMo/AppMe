@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <string name="folder_dir_location">Directory</string>
+    <string name="folder_change_dir">Change directory</string>
+    <string name="folder_home">Home</string> 
+    <string name="folder_minus" translatable="false">-</string>
+    <string name="folder_advanced_settings">Advanced</string>
+    <string name="folder_defaultdir">Default directory</string>
+    <string name="folder_descriptions">desc</string>
+    <string name="folder_detailed">Detailed</string>
+    <string name="folder_details">Details</string>
+    <string name="folder_dir_info">Folder information</string>
+    <string name="folder_is_files">" Files"</string>
+    <string name="folder_hidden_files">Hidden files</string>
+    <string name="folder_it_couldnt_be_found">It couldnt be found.</string>
+    <string name="folder_last_modified">Last modified:</string>
+    <string name="folder_md5">MD5:</string> 
+    <string name="folder_options">Options</string>
+    <string name="folder_packing">Packing</string> 
+    <string name="folder_sha1_key">SHA-1:</string>
+    <string name="folder_show_preview">Thumbnails</string>
+    <string name="folder_simple">Simple</string>
+    <string name="folder_size">Used:</string> 
+    <string name="folder_ui_settings">View settings</string>
+    <string name="folder_view_mode">View mode</string>
+    <string name="folder_xda_forum">XDA forum</string>
+    <string name="folder_enable_root">Enable root access</string>
+    <!-- Shown as a transient message whenever a file fails to play -->
+    <string name="folder_playback_failed">The player doesn\'t support this type of audio file.</string>
+    <!-- shown when connecting to a music stream, before it starts playing -->
+    <string name="folder_stream_loading_text">Connecting to <xliff:g id="host">%s</xliff:g>\u2026</string>
+    
+    <!-- sort preferences -->
+    <string name="folder_sort">Sort</string>
+    <string name="folder_sort_preferences">Sort preferences</string>
+    <string name="folder_sort_reverselist">Reverse list</string>
+    <string name="folder_sort_name">Name</string>
+    <string name="folder_sort_size">Size</string>
+    <string name="folder_sort_type">Type</string>
+    <string name="folder_sort_date">Date</string>
+
+    <!-- permissions -->
+    <string name="folder_permissions">Permissions</string>
+    <string name="folder_owner">Owner:</string>
+    <string name="folder_group">Group:</string>
+    <string name="folder_others">Other:</string>
+    <string name="folder_read">Read</string>
+    <string name="folder_write">Write</string>
+    <string name="folder_execute">Execute</string>
+    <string name="folder_permissions_changed">Permissions changed</string>
+
+    <!-- actionmode -->
+    <string name="folder_file_select">\u0020file(s)</string>
+    <string name="folder_file_selected">\u0020selected</string>
+
+    <!-- directory info dialog -->
+    <string name="folder_location">Location:</string>
+    <string name="folder_total_space">Total space:</string>
+    <string name="folder_free_space">Free space:</string>
+    <string name="folder_block_size">Block size:</string>
+    <string name="folder_used">Used:</string>
+
+    <!-- overwrite dialog -->
+    <string name="folder_overwrite_title">Target file already exists</string>
+    <string name="folder_overwrite_source">Source</string>
+    <string name="folder_overwrite_destination">Destination</string>
+    <string name="folder_overwrite_skip">Skip</string>
+    <string name="folder_overwrite_skip_all">Skip all</string>
+    <string name="folder_overwrite_replace">Replace</string>
+    <string name="folder_overwrite_replace_all">Replace all</string>
+
+    <!-- file picker -->
+    <string name="folder_picker_choose_one_file">Choose a file</string>
+
+    <!-- permissions -->
+    <string name="folder_permission_message_denied">Permission \"%1$s\" has been denied</string></resources>
